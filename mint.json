@@ -50,31 +50,31 @@
     {
       "group": "General API Docs",
       "pages": [
-        "api-reference/getting-started",
-        "api-reference/multi-chain-transaction-tracking",
-        "api-reference/post-route-actions",
-        "api-reference/cross-chain-failure-cases",
-        "api-reference/ibc-token-routing--problem---skip-api-routing-algorithm",
-        "api-reference/evm-transactions-intro",
-        "api-reference/cw20-tokens---their-limitations",
-        "api-reference/experimental-features",
-        "api-reference/upcoming-features",
-        "api-reference/faq"        
+        "docs/getting-started",
+        "docs/multi-chain-transaction-tracking",
+        "docs/post-route-actions",
+        "docs/cross-chain-failure-cases",
+        "docs/ibc-token-routing--problem---skip-api-routing-algorithm",
+        "docs/evm-transactions-intro",
+        "docs/cw20-tokens---their-limitations",
+        "docs/experimental-features",
+        "docs/upcoming-features",
+        "docs/faq"
       ]
     },
     {
       "group": "SDK Docs",
       "pages": [
-        "api-reference/getting-started--typescript-sdk",
-        "api-reference/gas-and-fee-tooling"
+        "docs/getting-started--typescript-sdk",
+        "docs/gas-and-fee-tooling"
       ]
     },
     {
       "group": "Advanced Swapping Docs",
       "pages": [
-        "api-reference/understanding-quote-quality-metrics",
-        "api-reference/safe-swapping--how-to-protect-users-from-bad-trades",
-        "api-reference/allow-unsafe---preventing---handling-bad-execution"
+        "docs/understanding-quote-quality-metrics",
+        "docs/safe-swapping--how-to-protect-users-from-bad-trades",
+        "docs/allow-unsafe---preventing---handling-bad-execution"
       ]
     },
     {
@@ -83,30 +83,30 @@
         {
           "group": "Info",
           "pages": [
-            "api-reference/developer/info/get-v1infochains",
-            "api-reference/developer/info/get-v2infobridges"
+            "docs/developer/info/get-v1infochains",
+            "docs/developer/info/get-v2infobridges"
           ]
         },
         {
           "group": "Fungible",
           "pages": [
-            "api-reference/developer/fungible/get-v1fungiblevenues",
-            "api-reference/developer/fungible/get-v1fungibleassets",
-            "api-reference/developer/fungible/post-v1fungibleassets_from_source",
-            "api-reference/developer/fungible/post-v2fungibleroute",
-            "api-reference/developer/fungible/post-v2fungiblemsgs",
-            "api-reference/developer/fungible/post-v2fungiblemsgs_direct",
-            "api-reference/developer/fungible/post-v1fungiblerecommend_assets",
-            "api-reference/developer/fungible/post-v1fungibleibc_origin_assets",
-            "api-reference/developer/fungible/post-v2fungibleassets_between_chains"
+            "docs/developer/fungible/get-v1fungiblevenues",
+            "docs/developer/fungible/get-v1fungibleassets",
+            "docs/developer/fungible/post-v1fungibleassets_from_source",
+            "docs/developer/fungible/post-v2fungibleroute",
+            "docs/developer/fungible/post-v2fungiblemsgs",
+            "docs/developer/fungible/post-v2fungiblemsgs_direct",
+            "docs/developer/fungible/post-v1fungiblerecommend_assets",
+            "docs/developer/fungible/post-v1fungibleibc_origin_assets",
+            "docs/developer/fungible/post-v2fungibleassets_between_chains"
           ]
         },
         {
           "group": "Transaction",
           "pages": [
-            "api-reference/developer/transaction/post-v2txsubmit",
-            "api-reference/developer/transaction/post-v2txtrack",
-            "api-reference/developer/transaction/get-v2txstatus"
+            "docs/developer/transaction/post-v2txsubmit",
+            "docs/developer/transaction/post-v2txtrack",
+            "docs/developer/transaction/get-v2txstatus"
           ]
         }
       ]
@@ -117,30 +117,30 @@
         {
           "group": "Info",
           "pages": [
-            "api-reference/prod/info/get-v1infochains",
-            "api-reference/prod/info/get-v2infobridges"
+            "docs/prod/info/get-v1infochains",
+            "docs/prod/info/get-v2infobridges"
           ]
         },
         {
           "group": "Fungible",
           "pages": [
-            "api-reference/prod/fungible/get-v1fungiblevenues",
-            "api-reference/prod/fungible/get-v1fungibleassets",
-            "api-reference/prod/fungible/post-v1fungibleassets_from_source",
-            "api-reference/prod/fungible/post-v2fungibleroute",
-            "api-reference/prod/fungible/post-v2fungiblemsgs",
-            "api-reference/prod/fungible/post-v2fungiblemsgs_direct",
-            "api-reference/prod/fungible/post-v1fungiblerecommend_assets",
-            "api-reference/prod/fungible/post-v1fungibleibc_origin_assets",
-            "api-reference/prod/fungible/post-v2fungibleassets_between_chains"
+            "docs/prod/fungible/get-v1fungiblevenues",
+            "docs/prod/fungible/get-v1fungibleassets",
+            "docs/prod/fungible/post-v1fungibleassets_from_source",
+            "docs/prod/fungible/post-v2fungibleroute",
+            "docs/prod/fungible/post-v2fungiblemsgs",
+            "docs/prod/fungible/post-v2fungiblemsgs_direct",
+            "docs/prod/fungible/post-v1fungiblerecommend_assets",
+            "docs/prod/fungible/post-v1fungibleibc_origin_assets",
+            "docs/prod/fungible/post-v2fungibleassets_between_chains"
           ]
         },
         {
           "group": "Transaction",
           "pages": [
-            "api-reference/prod/transaction/post-v2txsubmit",
-            "api-reference/prod/transaction/post-v2txtrack",
-            "api-reference/prod/transaction/get-v2txstatus"
+            "docs/prod/transaction/post-v2txsubmit",
+            "docs/prod/transaction/post-v2txtrack",
+            "docs/prod/transaction/get-v2txstatus"
           ]
         }
       ]
