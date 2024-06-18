@@ -43,9 +43,9 @@
         "multi-chain-transaction-tracking",
         "post-route-actions",
         "cross-chain-failure-cases",
-        "ibc-token-routing--problem---skip-api-routing-algorithm",
+        "ibc-token-routing-problem-skip-api-routing-algorithm",
         "evm-transactions-intro",
-        "cw20-tokens---their-limitations",
+        "cw20-tokens-their-limitations",
         "experimental-features",
         "upcoming-features",
         "faq"
@@ -54,7 +54,7 @@
     {
       "group": "SDK Docs",
       "pages": [
-        "getting-started--typescript-sdk",
+        "getting-started-typescript-sdk",
         "gas-and-fee-tooling"
       ]
     },
@@ -62,8 +62,8 @@
       "group": "Advanced Swapping Docs",
       "pages": [
         "understanding-quote-quality-metrics",
-        "safe-swapping--how-to-protect-users-from-bad-trades",
-        "allow-unsafe---preventing---handling-bad-execution"
+        "safe-swapping-how-to-protect-users-from-bad-trades",
+        "allow-unsafe-preventing-handling-bad-execution"
       ]
     },
     {
