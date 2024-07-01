@@ -51,8 +51,8 @@ When using `/route` and `/msgs`, you incorporate the fee into the quote when you
    1. You should pass a set of affiliate addresses for every chain where the swap _might_ take place. (You can get this list by querying the `/v2/fungible/swap_venues` endpoint for the list of all `swap_venues` and grabbing the `chain_id` for each). This is required because `/msgs_direct` is determining the route, so we don't know which chain the swap will take place on when calling it.  
    2. You should ensure that the sums of `basis_point_fee` for the sets of addresses you pass for each chain are equivalent. (For example, if you pass osmo1... addresses and neutron1... addresses, the sum of the `basis_point_fee` values for the osmo1... addresses must be the same as the sum for the neutron1... addresses.) You will receive an error if your fee sums are non-equivalent. (The error is necessary because we don't know which fee amount to simulate with.)
 
-<Tip>
+<Check>
  **Want to help us get better? Have questions or feedback?**
  
  You can reach us easily by joining [our Discord](https://skip.money/discord) and grabbing the "Skip API Developer" role.
- </Tip>
+ </Check>

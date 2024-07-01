@@ -32,7 +32,8 @@ Below, we provide examples of the responses in each these cases.
 
 The price impact is greater than 10% (`BAD_PRICE_ERROR`):
 
-* ```{  
+* 
+```{  
   "code": 3,  
   "message": "swap execution price in route deviates too far from market price. expected price impact: 98.6915%",  
   "details": [  
@@ -48,7 +49,8 @@ The price impact is greater than 10% (`BAD_PRICE_ERROR`):
 
 The user loses more than 10% of their USD value (`BAD_PRICE_ERROR`):
 
-* ```{  
+* 
+```{  
   "code": 3,  
   "message": "difference in usd value of route input and output is too large. input usd value: 1000 output usd value: 600",  
   "details": [  
@@ -64,8 +66,9 @@ The user loses more than 10% of their USD value (`BAD_PRICE_ERROR`):
 
 The `price_impact` and the estimated USD value difference cannot be calculated (`LOW_INFO_ERROR`)
 
-* JSON  
-```{  
+*   
+```JSON JSON
+{  
   "code": 3,  
   "message": "unable to determine route safety",  
   "details": [  
@@ -103,7 +106,8 @@ The price impact is greater than 10% (`BAD_PRICE_WARNING`):
 
 More than 10% of the USD value of the input is lost in the swap (`BAD_PRICE_WARNING`): 
 
-* ```"warning": {  
+* 
+```"warning": {  
     "type": "BAD_PRICE_WARNING",  
     "message": "difference in usd value of route input and output is too large. input usd value: 1000 output usd value: 600"  
 }  
@@ -111,7 +115,9 @@ More than 10% of the USD value of the input is lost in the swap (`BAD_PRICE_WARN
 
 The `price_impact` and the estimated USD value difference cannot be calculated (`LOW_INFO_ERROR`)
 
-* ```"warning": {  
+* 
+```
+"warning": {  
     "type": "LOW_INFO_WARNING",  
     "message": "unable to determine route safety"  
 }  
