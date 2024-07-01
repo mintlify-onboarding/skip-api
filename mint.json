@@ -40,100 +40,68 @@
       "group": "General API Docs",
       "pages": [
         "getting-started",
-        "multi-chain-transaction-tracking",
+        "quickstart-guide",
+        "overview-and-typical-usage",
+        "supported-ecosystems-and-bridges",
+        "multi-chain-realtime-transaction-and-packet-tracking",
+        "api-keys",
+        "smart-relay",
         "post-route-actions",
-        "cross-chain-failure-cases",
-        "ibc-token-routing-problem-skip-api-routing-algorithm",
-        "evm-transactions-intro",
-        "cw20-tokens-their-limitations",
-        "experimental-features",
-        "upcoming-features",
-        "faq"
+        "affiliate-fees",
+        "fe-info",
+        "faq",
+        "upcoming-features"
       ]
     },
     {
-      "group": "SDK Docs",
+      "group": "Advanced Transfer Docs",
       "pages": [
-        "getting-started-typescript-sdk",
-        "gas-and-fee-tooling"
+        "handling-cross-chain-failure-cases",
+        "ibc-routing-algorithm",
+        "evm-transactions",
+        "svm-transaction-details",
+        "cw20-swaps",
+        "experimental-features"
       ]
     },
     {
       "group": "Advanced Swapping Docs",
       "pages": [
         "understanding-quote-quality-metrics",
-        "safe-swapping-how-to-protect-users-from-bad-trades",
-        "allow-unsafe-preventing-handling-bad-execution"
+        "allow_unsafe-preventing-handling-bad-execution",
+        "safe-swapping-how-to-protect-users-from-harming-themselves",
+        "smart-swap-options"
       ]
     },
     {
-      "group": "Dev Endpoints",
+      "group": "TypeScript Library Docs",
       "pages": [
-        {
-          "group": "Info",
-          "pages": [
-            "developer/info/get-v1infochains",
-            "developer/info/get-v2infobridges"
-          ]
-        },
-        {
-          "group": "Fungible",
-          "pages": [
-            "developer/fungible/get-v1fungiblevenues",
-            "developer/fungible/get-v1fungibleassets",
-            "developer/fungible/post-v1fungibleassets_from_source",
-            "developer/fungible/post-v2fungibleroute",
-            "developer/fungible/post-v2fungiblemsgs",
-            "developer/fungible/post-v2fungiblemsgs_direct",
-            "developer/fungible/post-v1fungiblerecommend_assets",
-            "developer/fungible/post-v1fungibleibc_origin_assets",
-            "developer/fungible/post-v2fungibleassets_between_chains"
-          ]
-        },
-        {
-          "group": "Transaction",
-          "pages": [
-            "developer/transaction/post-v2txsubmit",
-            "developer/transaction/post-v2txtrack",
-            "developer/transaction/get-v2txstatus"
-          ]
-        }
+        "typescript-sdk",
+        "gas-and-fee-tooling",
+        "migration-guide"
       ]
     },
     {
-      "group": "Prod Endpoints",
+      "group": "Support Requirements",
       "pages": [
-        {
-          "group": "Info",
-          "pages": [
-            "prod/info/get-v1infochains",
-            "prod/info/get-v2infobridges"
-          ]
-        },
-        {
-          "group": "Fungible",
-          "pages": [
-            "prod/fungible/get-v1fungiblevenues",
-            "prod/fungible/get-v1fungibleassets",
-            "prod/fungible/post-v1fungibleassets_from_source",
-            "prod/fungible/post-v2fungibleroute",
-            "prod/fungible/post-v2fungiblemsgs",
-            "prod/fungible/post-v2fungiblemsgs_direct",
-            "prod/fungible/post-v1fungiblerecommend_assets",
-            "prod/fungible/post-v1fungibleibc_origin_assets",
-            "prod/fungible/post-v2fungibleassets_between_chains"
-          ]
-        },
-        {
-          "group": "Transaction",
-          "pages": [
-            "prod/transaction/post-v2txsubmit",
-            "prod/transaction/post-v2txtrack",
-            "prod/transaction/get-v2txstatus"
-          ]
-        }
+        "chain-support-requirements",
+        "token-support-requirements",
+        "skip-api-swap-venue-requirements"
+      ]
+    },
+
+    {
+      "group": "API on the go",
+      "pages": [
+        "how-to-generate-shareable-links",
+        "embed-a-swap-widget"
       ]
     }
+    
+
+
+
+    
   ],
   "footerSocials": {
     "twitter": "https://twitter.com/skipprotocol",

@@ -1,0 +1,69 @@
+
+    {
+      "group": "Dev Endpoints",
+      "pages": [
+        {
+          "group": "Info",
+          "pages": [
+            "developer/info/get-v1infochains",
+            "developer/info/get-v2infobridges"
+          ]
+        },
+        {
+          "group": "Fungible",
+          "pages": [
+            "developer/fungible/get-v1fungiblevenues",
+            "developer/fungible/get-v1fungibleassets",
+            "developer/fungible/post-v1fungibleassets_from_source",
+            "developer/fungible/post-v2fungibleroute",
+            "developer/fungible/post-v2fungiblemsgs",
+            "developer/fungible/post-v2fungiblemsgs_direct",
+            "developer/fungible/post-v1fungiblerecommend_assets",
+            "developer/fungible/post-v1fungibleibc_origin_assets",
+            "developer/fungible/post-v2fungibleassets_between_chains"
+          ]
+        },
+        {
+          "group": "Transaction",
+          "pages": [
+            "developer/transaction/post-v2txsubmit",
+            "developer/transaction/post-v2txtrack",
+            "developer/transaction/get-v2txstatus"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Prod Endpoints",
+      "pages": [
+        {
+          "group": "Info",
+          "pages": [
+            "prod/info/get-v1infochains",
+            "prod/info/get-v2infobridges"
+          ]
+        },
+        {
+          "group": "Fungible",
+          "pages": [
+            "prod/fungible/get-v1fungiblevenues",
+            "prod/fungible/get-v1fungibleassets",
+            "prod/fungible/post-v1fungibleassets_from_source",
+            "prod/fungible/post-v2fungibleroute",
+            "prod/fungible/post-v2fungiblemsgs",
+            "prod/fungible/post-v2fungiblemsgs_direct",
+            "prod/fungible/post-v1fungiblerecommend_assets",
+            "prod/fungible/post-v1fungibleibc_origin_assets",
+            "prod/fungible/post-v2fungibleassets_between_chains"
+          ]
+        },
+        {
+          "group": "Transaction",
+          "pages": [
+            "prod/transaction/post-v2txsubmit",
+            "prod/transaction/post-v2txtrack",
+            "prod/transaction/get-v2txstatus"
+          ]
+        }
+      ]
+    }

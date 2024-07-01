@@ -3,13 +3,13 @@ title: "CW20 Tokens & Their Limitations"
 description: "Information about performing CW20 swaps"
 ---
 
-This page covers the basics of CW20s and the limitations around performing cross-chain actions with CW20 tokens -- compared to tokenfactory and "native Cosmos" assets. 
+This page covers the basics of CW20s and the limitations around performing cross-chain actions with CW20 tokens -- compared to tokenfactory and "native" Cosmos assets (aka Bank Module assets). 
 
 ### CW20 Token Denom Formatting In API Requests
 
 To use CW20 tokens in the Skip API, specify the denom as "cw20:" + the token contract address. 
 
-Example denom for Astro on Terra: cw20:terra1nsuqsk6kh58ulczatwev87ttq2z6r3pusulg9r24mfj2fvtzd4uq3exn26
+Example denom for Astro on Terra2: `cw20:terra1nsuqsk6kh58ulczatwev87ttq2z6r3pusulg9r24mfj2fvtzd4uq3exn26`
 
 ### Background
 
@@ -20,7 +20,7 @@ Example denom for Astro on Terra: cw20:terra1nsuqsk6kh58ulczatwev87ttq2z6r3pusul
 Contracts that comply with the standard implement the following functionalities: 
 
 * Transferring tokens from one account to another
-* Sending tokens to a contract along with a message
+* Sending tokens to a contract along with a message (similar to `callContractWithToken`)
 * Tracking balances
 * Delegating balance spending to other accounts and contracts
 
@@ -45,10 +45,12 @@ The downside of native tokens is that they're permissioned and deeply ingrained 
 
 Tokenfactory tokens are created with the [tokenfactory](https://docs.osmosis.zone/osmosis-core/modules/tokenfactory/) module. They're designed to have the best of both worlds of CW20 and native tokens: 
 
-* Like CW20s, they're permissionless and users can create new ones just by submitting transactions -- no need to modify the chain itself
+* Like CW20s, they're permissionless and users can create new ones just by submitting transactions -- no need to modify the chain's state machine
 * Like native tokens, they're directly compatible with IBC out-of-the-box, and the bank module manages their balances + transferring functionality.
 
-This combination of traits leads many to see tokenfactory as a strict improvement on CW20 that devs should prefer in the vast majority of cases.
+This combination of traits leads many to see tokenfactory as a strict improvement on CW20 that devs should prefer in the vast majority of cases. We strongly agree with this conclusion. 
+
+Unlike `CW20s` , tokenfactory tokens have no limitations in the cross-chain functionality Skip API can offer for them. 
 
 ### What limitations do CW20 tokens have within the Skip API?
 
@@ -64,21 +66,19 @@ Chain 1 is the origin chain where the cw20 token can be swapped freely, but it c
 
 * Call a contract on a remote chain after purchasing a cw20 asset (e.g. since this requires an IBC transfer under the hood)
 
-![Chain 1 is the origin chain, where the token can be used freely for post-route actions, but it cannot be used in post-route actions on other chains.](/images/568550d-case2.jpg)
+<Frame caption="Chain 1 is the origin chain, where the token can be used freely for post-route actions, but it cannot be used in post-route actions on other chains.">![Chain 1 is the origin chain, where the token can be used freely for post-route actions, but it cannot be used in post-route actions on other chains.](/images/568550d-case2.jpg)</Frame>
 
-Chain 1 is the origin chain, where the token can be used freely for post-route actions, but it cannot be used in post-route actions on other chains.
 
 * IBC transfer from a remote chain to the CW20's origin chain then perform a swap or any other post-route action on that chain
 
-![Chain 2 is the origin chain. The token can be transferred back there, but it can't be used or swapped for anything in the same transaction.](/images/3dde446-case3.jpg)
+<Frame caption="Chain 2 is the origin chain. The token can be transferred back there, but it can't be used or swapped for anything in the same transaction.">![Chain 2 is the origin chain. The token can be transferred back there, but it can't be used or swapped for anything in the same transaction.](/images/3dde446-case3.jpg)</Frame>
 
-Chain 2 is the origin chain. The token can be transferred back there, but it can't be used or swapped for anything in the same transaction.
 
 In principle, you can use the Skip API to construct any of these action sequences across multiple transactions, but it will be more challenging for you and your end users.
 
-<Check>
 
-**Want to help us get better? Have questions or feedback?**
-
-You can reach us easily by joining [our Discord](https://skip.money/discord) and grabbing the "Skip API Developer" role.
-</Check>
+ <Check>
+ **Want to help us get better? Have questions or feedback?**
+ 
+ You can reach us easily by joining [our Discord](https://skip.money/discord) and grabbing the "Skip API Developer" role.
+ </Check>

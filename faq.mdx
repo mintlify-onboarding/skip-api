@@ -51,19 +51,19 @@ More than 70+. We support:
 
 #### How do I get the Skip API to support my chain
 
-Please see the [Chain Support Requirements](/docs/chain-support-requirements) document to ensure your chain meets the necessary requirements and submit the chain support request form linked in that doc. 
+Please see the [Chain Support Requirements](/chain-support-requirements) document to ensure your chain meets the necessary requirements and submit the chain support request form linked in that doc. 
 
 #### How do I get the Skip API to support my token?
 
-Please complete the necessary steps detailed in the [Token & Route Support Requirements](/docs/token-support-requirements) doc. 
+Please complete the necessary steps detailed in the [Token & Route Support Requirements](/token-support-requirements) doc. 
 
 #### How do I get the Skip API to support a route for a particular token to a remote chain?
 
-Please complete the necessary steps detailed in the [Token & Route Support Requirements](/docs/token-support-requirements) doc for the destination chain + token in question. 
+Please complete the necessary steps detailed in the [Token & Route Support Requirements](/token-support-requirements) doc for the destination chain + token in question. 
 
 #### How do I get the Skip API to route swaps to my swapping venue / DEX?
 
-Please see the [Swap Venue Requirements](/docs/skip-api-swap-venue-requirements) page to ensure your DEX meets the necessary requirements then submit the swap venue request form linked in that doc. 
+Please see the [Swap Venue Requirements](/skip-api-swap-venue-requirements) page to ensure your DEX meets the necessary requirements then submit the swap venue request form linked in that doc. 
 
 #### How long does it take to build an application with Skip API?
 
@@ -102,7 +102,7 @@ Users are responsible for the transactions they sign in all cases:
 Integrators are solely and completely responsible for building UIs that maximally protect users from harming themselves by swapping or transferring at unfavorable prices. To help facilitate this goal, we provide: 
 
 * Detailed information about quote quality, on-chain liquidity, fees, and price estimates in our API response objects (e.g. estimates of the USD value of amount in and amount out, on-chain price impact, etc...)
-* Extensive guidance about how to build S.A.F.E. interfaces in our docs: [SAFE Swapping: How to protect users from harming themselves](/docs/safe-swapping-how-to-protect-users-from-harming-themselves)
+* Extensive guidance about how to build S.A.F.E. interfaces in our docs: [SAFE Swapping: How to protect users from harming themselves](/safe-swapping-how-to-protect-users-from-harming-themselves)
 * Hand-on interface design feedback based on years of working with dozens of top interfaces
 
 #### Does Skip provide refunds to users if an interface created an transaction that called a Skip contract incorrectly?
@@ -187,7 +187,7 @@ _A common gotcha:_ `/assets_from_source` only returns assets reachable in a sing
 
 This is a great question and the best answer that exists is: It depends on many factors, including how many relayers are covering a particular channel, block times, the time-to-finality of the source chain, whether relayers are live, how many packets relayers are waiting to batch together, and much more...
 
-**In short, it can range from several seconds to minutes (or never) in the worst case.** After a timeout window, a packet won't be valid on the destination chain when it gets relayed. This timeout is set to 5 minutes for all packets created via the Skip API. It's important to understand what happens to user tokens in the event of timeouts. You can read about that in [Cross-chain Failure Cases](/docs/handling-cross-chain-failure-cases)
+**In short, it can range from several seconds to minutes (or never) in the worst case.** After a timeout window, a packet won't be valid on the destination chain when it gets relayed. This timeout is set to 5 minutes for all packets created via the Skip API. It's important to understand what happens to user tokens in the event of timeouts. You can read about that in [Cross-chain Failure Cases](/handling-cross-chain-failure-cases)
 
 For now, we recommend making a small warning or disclaimer to users on your application, including some variant of the following: 
 
@@ -211,6 +211,7 @@ In general, transfers take as long as it takes for the source chain to "finalize
 #### If Skip doesn't charge fees, how come some simple transfers seem to have a fee taken out of them?
 
 This happens because many of the bridges (which Skip rely on) take fees to pay for gas and the cost of operating their protocol. 
+<CodeGroup>
 
 ```ts entrypointsignAmino
 import { TxRaw } from "cosmjs-types/cosmos/tx/v1beta1/tx";
@@ -313,6 +314,7 @@ async function signAmino(
   });
 }
 ```
+</CodeGroup>
 
 #### How should I set gas prices for Cosmos transactions?
 
@@ -327,7 +329,7 @@ Shortly, the Skip API will surface recommended gas price too, and we will releas
 
 #### How should I set gas amount for Cosmos transactions?
 
-We recommend using the [Gas and Fee Tooling](/docs/gas-and-fee-tooling) available in the skip-router SDK. 
+We recommend using the [Gas and Fee Tooling](/gas-and-fee-tooling) available in the skip-router SDK. 
 
 #### What does it mean when the docs say an endpoint is in "ALPHA" or "BETA"?
 
