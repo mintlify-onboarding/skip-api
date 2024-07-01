@@ -39,30 +39,30 @@
         {
           "group": "Info",
           "pages": [
-            "prod/info/get-v1infochains",
-            "prod/info/get-v2infobridges"
+            "api-reference/info/get-v1infochains",
+            "api-reference/info/get-v2infobridges"
           ]
         },
         {
           "group": "Fungible",
           "pages": [
-            "prod/fungible/get-v1fungiblevenues",
-            "prod/fungible/get-v1fungibleassets",
-            "prod/fungible/post-v1fungibleassets_from_source",
-            "prod/fungible/post-v2fungibleroute",
-            "prod/fungible/post-v2fungiblemsgs",
-            "prod/fungible/post-v2fungiblemsgs_direct",
-            "prod/fungible/post-v1fungiblerecommend_assets",
-            "prod/fungible/post-v1fungibleibc_origin_assets",
-            "prod/fungible/post-v2fungibleassets_between_chains"
+            "api-reference/fungible/get-v1fungiblevenues",
+            "api-reference/fungible/get-v1fungibleassets",
+            "api-reference/fungible/post-v1fungibleassets_from_source",
+            "api-reference/fungible/post-v2fungibleroute",
+            "api-reference/fungible/post-v2fungiblemsgs",
+            "api-reference/fungible/post-v2fungiblemsgs_direct",
+            "api-reference/fungible/post-v1fungiblerecommend_assets",
+            "api-reference/fungible/post-v1fungibleibc_origin_assets",
+            "api-reference/fungible/post-v2fungibleassets_between_chains"
           ]
         },
         {
           "group": "Transaction",
           "pages": [
-            "prod/transaction/post-v2txsubmit",
-            "prod/transaction/post-v2txtrack",
-            "prod/transaction/get-v2txstatus"
+            "api-reference/transaction/post-v2txsubmit",
+            "api-reference/transaction/post-v2txtrack",
+            "api-reference/transaction/get-v2txstatus"
           ]
         }
       ]
