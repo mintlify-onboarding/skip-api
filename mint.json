@@ -109,7 +109,7 @@
         {
           "group": "Info",
           "pages": [
-            "api-reference/info/get-v2infochainss",
+            "api-reference/info/get-v2infochains",
             "api-reference/info/get-v2infobridges"
           ]
         },
