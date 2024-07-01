@@ -109,21 +109,21 @@
         {
           "group": "Info",
           "pages": [
-            "api-reference/info/get-v1infochains",
+            "api-reference/info/get-v2infochainss",
             "api-reference/info/get-v2infobridges"
           ]
         },
         {
           "group": "Fungible",
           "pages": [
-            "api-reference/fungible/get-v1fungiblevenues",
-            "api-reference/fungible/get-v1fungibleassets",
-            "api-reference/fungible/post-v1fungibleassets_from_source",
+            "api-reference/fungible/get-v2fungiblevenues",
+            "api-reference/fungible/get-v2fungibleassets",
+            "api-reference/fungible/post-v2fungibleassets_from_source",
             "api-reference/fungible/post-v2fungibleroute",
             "api-reference/fungible/post-v2fungiblemsgs",
             "api-reference/fungible/post-v2fungiblemsgs_direct",
-            "api-reference/fungible/post-v1fungiblerecommend_assets",
-            "api-reference/fungible/post-v1fungibleibc_origin_assets",
+            "api-reference/fungible/post-v2fungiblerecommend_assets",
+            "api-reference/fungible/post-v2fungibleibc_origin_assets",
             "api-reference/fungible/post-v2fungibleassets_between_chains"
           ]
         },
