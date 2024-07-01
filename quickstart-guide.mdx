@@ -50,7 +50,7 @@ We'll build on this file throughout the example:
 
 
 
-```Node Node
+```Javascript Node
 import * as chainRegistry from "chain-registry"; 
 import { DirectSecp256k1HdWallet } from "@cosmjs/proto-signing";
 import { stringToPath } from "cosmjs/crypto";
@@ -93,7 +93,7 @@ Copy the following code into `skip-api-example.js`:
 
 
 
-```Node Node
+```Javascript Node
  // Generates a Cosmos signer for a given chainID, 
 // loading the mnemonic from the environment
 async function getCosmosSigner(chainID) {
@@ -150,7 +150,7 @@ Just add the following line after the line where you initialized the skipClient:
 
 
 
-```Node Node
+```Javascript Node
 const route = await skipClient.route({
   sourceAssetDenom: "uusdc",
   sourceAssetChainID: "noble-1",
@@ -207,7 +207,7 @@ Add the following snippet to your script after getting the route to retrieve the
 
 
 
-```Node Node
+```Javascript Node
 // get user addresses for each requiredChainAddress
     const userAddresses = await Promise.all(route.requiredChainAddresses.map(async (chainID) => {
         return {
@@ -238,7 +238,7 @@ Simply add the following snippet below your retrieval code to execute the route:
 
 
 
-```Node Node
+```Javascript Node
  await skipClient.executeRoute({
   route,
   userAddresses,
